@@ -1,5 +1,96 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5F5 ;
 }
+#container{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    height: 1767px;
+    width: 375px;
+    background-color:  #FFFFFF;
+    top: -577px;
+    left: 189px;
+    font-family:Source Sans Pro ;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 67px;
 
+}
+#logo{
+    height: 33.02px;
+    width: 127px;
+    margin: 16px 233px 17.98px 15px;
+    size: 13px;
+}
+#me{
+    height: 34px;
+    width: 34px;
+    margin: 16px 16px 17px 30px;
+    border-radius: 300px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    height: 545px;
+    width: 376px;
+    background-color: #FFFFFF;
+}
+#bio{
+display: flex;
+flex-direction: row;
+}
+#identification{
+line-height: 10px;
+padding-left: 10px;
+}
+#vangog{
+    height: 34px;
+    width: 34px;
+    border-radius: 250px;
+    margin: 10px 10px 10px 10px;
+}
+#post-vangog{
+    height: 375px;
+    width: 375px;
+    top: 55px;
+}
+#icons{
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    padding: 10px 10px 0px 10px;
+}
+i{
+  color: gray;
+}
+#heart-icon{
+    width: 23.36px;
+    height: 22.13px;
+    padding: 0px 10px 0px 10px;
+}
+#comment-icon{
+    width: 18.7px;
+    height:18.65px ;
+    padding: 0px 15px 0px 15px;
+}
+#dm-icon{
+    width: 22.44px;
+    height: 18.65px;
+    padding: 0px 15px 0px 15px;
+}
+#like{
+    font-style:bold;
+    display: flex;
+    flex-direction: column;
+   
+}
+#all_like{
+    padding-bottom: 0;
+}
