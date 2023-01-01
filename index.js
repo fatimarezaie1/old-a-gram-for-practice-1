@@ -1,7 +1,7 @@
 let content =  document.getElementById("content");
-let likes = document.getElementById("heart-icon");
-let comment = document.getElementById("icons");
-
+let addLike = document.getElementById("heart-icon");
+let allLike = document.getElementById("all_like");
+let click = document .getElementById("btn");
 
 const posts = [
     {
@@ -31,32 +31,65 @@ const posts = [
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }]
+    
+    
+        for(let i= 0; i<posts.length ; i++){
+           
+            let newItem = document.createElement("div");
+            newItem.classList.add ="content";
+            posts.forEach(function(){
+            newItem.innerHTML = `  
+            <div id="bio">
+                <div >
+                    <img src=${posts[i].avatar} id="vangog">
+                </div>
+                <div id="identification">
+                    <h1 style="font-size: 13px;">${posts[i].name}</h1>
+                    <p style="font-size: 12px; font-weight: 400;">${posts[i].location}</p>
+                </div>
+            </div>
+            <img src=${posts[i].post} id="post-vangog">
+            <div id="icons">
+            
+                <button><i class="fas fa-heart fa-2x " id="heart-icon" ></i></button>
+                <button><i class="fas fa-comment fa-2x" id="comment-icon"></i></button>
+                <button><i class="fas fa-share fa-2x" id="dm-icon"></i></button>
+            </div>
+            <div id="like">
+                <span id="all_like" >Like: ${posts[i].likes} </span>
+                <span >${posts[i].comment} </span>
+             </div> 
+             
+                 `
+             
+            })
+             content.appendChild(newItem);
+               
+        }
+
+           
+         
+
    
-    for( let i=0;  i <posts.length ; i++){
-    let newItem = document.createElement("div");
-    newItem.classList.add = ("bio");
-    newItem.innerHTML =`
-    <div id="bio">
-        <div >
-            <img src=${posts[i].post} id="vangog">
-        </div>
-        <div id="identification">
-            <h1 style="font-size: 13px;">${posts[i].name}</h1>
-            <p style="font-size: 12px; font-weight: 400;">${posts[i].location}</p>
-        </div>
-    </div>
-    <img src=${posts[i].post} id="post-vangog">
-    <div id="icons">
-        <i class="fas fa-heart fa-2x " id="heart-icon" ></i>
-        <i class="fas fa-comment fa-2x" id="comment-icon" ></i>
-        <i class="fas fa-share fa-2x" id="dm-icon"></i>
-    </div>
-    <div id="like">
-        <p id="all_like" >Like: ${posts[i].likes} | ${posts[i].username} ${'\n'} ${posts[i].comment}  </p>
-        
-    </div>  `
-            content.appendChild(newItem);  
-    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

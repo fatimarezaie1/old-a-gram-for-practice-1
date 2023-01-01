@@ -67,6 +67,12 @@ padding-left: 10px;
     cursor: pointer;
     padding: 10px 10px 0px 10px;
 }
+button{
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 i{
   color: gray;
 }
@@ -88,9 +94,10 @@ i{
 #like{
     font-style:bold;
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column; 
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 20px;
 }
-#all_like{
-    padding-bottom: 0;
-}
+
+
